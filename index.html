@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Delicious Recipes</div>
+            <div class="pages">
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./recipes.html">Recipes</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div>
+                    <a href="login.html">
+                        <button class="log_in">Login</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Delicious Recipes</h1>
+                <p>Discover over 1000+ amazing recipes from around the world</p>
+            </div>
+        </section>
+
+        <section class="featured-recipes">
+            <div class="container">
+                <h1 class="cont"><u>Today's Specials</u></h1>
+                <div class="recipe-grid">
+                    <!-- Repeat this block for featured recipes -->
+                    <div class="recipe-card">
+                        <img src="images/spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+                        <div class="recipe-content">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p>Classic Roman pasta dish with eggs, cheese, and pancetta</p>
+                        </div>
+                    </div>
+                    <!-- Recipe Card 5 -->
+                    <div class="recipe-card">
+                        <img src="images/Chicken Parmesan.jpg" alt="Chicken Parmesan">
+                        <div class="recipe-content">
+                            <h3>Chicken Parmesan</h3>
+                            <p> It is a masterful combination of juicy chicken, crisp breadcrumb coating, gooey, melted
+                                cheese, and tangy marinara sauce</p>
+                            <a href="#" class="btn">View Recipe</a>
+                        </div>
+                    </div>
+                    <!-- Recipe Card 6 -->
+                    <div class="recipe-card">
+                        <img src="images/Chicken Tikka Masala.jpg" alt="Chicken Tikka Masala">
+                        <div class="recipe-content">
+                            <h3>Chicken Tikka Masala</h3>
+                            <p>It is a dish featuring marinated, grilled chicken (tikka) simmered in a creamy,
+                                tomato-based masala sauce.</p>
+                            <a href="#" class="btn">View Recipe</a>
+                        </div>
+                    </div>
+                    <!-- Recipe Card 7 -->
+                    <div class="recipe-card">
+                        <img src="images/Margherita Pizza.jpg" alt="Margherita Pizza">
+                        <div class="recipe-content">
+                            <h3>Margherita Pizza</h3>
+                            <p>It is a classic Italian pizza featuring a thin crust, red tomato sauce, creamy white
+                                mozzarella cheese, and fresh green basil leaves.</p>
+                            <a href="#" class="btn">View Recipe</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            const userEmail = localStorage.getItem("userEmail");
+            document.write("Welcome, " + userEmail);
+        </script>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Delicious Recipes. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
